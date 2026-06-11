@@ -73,6 +73,19 @@
 			}
 		}
 
+		&.avatar {
+			border-radius: 100%;
+
+			&:before {
+				display: none;
+			}
+
+			img {
+				border-radius: 100%;
+				width: 100%;
+			}
+		}
+
 		@include breakpoint('<=small') {
 			&.main {
 				margin: (_size(element-margin) * 1) 0;
